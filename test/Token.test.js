@@ -7,7 +7,9 @@ contract('Token', (accounts) => {
     describe('deployment', () => {
         it('tracks the name', async () => {
            const token = await Token.new()
-           const result token.name()
+           const result = await token.name()
+           console.log(token.name)
+           result.should.equal('botany')
         })
     })
 })
