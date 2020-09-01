@@ -11,6 +11,7 @@ contract('Token', (accounts) => {
   const totalSupply = '1000000000000000000000000'
   let token
 
+<<<<<<< HEAD
   beforeEach(async () => {
     token = await Token.new()
   })
@@ -42,3 +43,14 @@ contract('Token', (accounts) => {
     })
   })
 })
+=======
+    describe('deployment', () => {
+        it('tracks the name', async () => {
+           const token = await Token.new();
+           const result = await token.name();
+           
+           result.should.equal('botany')
+        })
+    });
+});
+>>>>>>> 8488402395fa506e01f85d2f3a9c22e3920b9fe7
