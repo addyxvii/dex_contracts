@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
+    "@openzeppelin/contracts": "^3.2.0",
     "dotenv": "^8.2.0"
   }
 }
